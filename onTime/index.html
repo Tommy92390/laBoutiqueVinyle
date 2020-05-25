@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+
+
+      <!-- jQuery -->
+      <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <!-- firebase -->
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+      <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+
+      <!-- Add Firebase products that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-auth.js"></script>
+      <!--  Database  -->
+      <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-storage.js"></script>
+
+      <script src="assets/js/config.js"></script>
+      <script src="assets/js/clock.js"></script>
+      <script src="assets/js/script.js"></script>
+
+
+      <!-- CSS  -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+
+    <body>
+<header>
+  <ul id="slide-out" class="sidenav">
+    <li><div class="user-view">
+      <div class="background">
+        <!-- <img src="images/office.jpg"> -->
+      </div>
+      <!-- <a href="#user"><img class="circle" src="images/yuna.jpg"></a> -->
+      <a href="#name"><span class="nameTitle">John Doe</span></a>
+      <a href="#email"><span class="emailTitle">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#signOutModal" class="red modal-trigger" id="signOut"><i class="material-icons">verified_user</i>Se déconnecter</a></li>
+    <li><a href="./signin.html" class="waves-effect">Se logger</a></li>
+    <li><a href="./signup.html"class="waves-effect">Créer un compte</a></li>
+  </ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+</header>
+
+<main class="container">
+<h1>onTime</h1>
+<div id="clockdiv">
+  <div>
+    <span id="days"></span>
+    <div class="smalltext">Jour</div>
+  </div>
+  <div>
+    <span id="hours"></span>
+    <div class="smalltext">Heures</div>
+  </div>
+  <div>
+    <span id="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span id="seconds"></span>
+    <div class="smalltext">Secondes</div>
+  </div>
+</div>
+
+
+<a class="waves-effect waves-light btn-large" id="onTime"><i class="material-icons right">access_alarms</i>Je suis là</a>
+
+
+<!-- modal -->
+  <!-- Modal Structure -->
+  <div id="signOutModal" class="modal">
+    <div class="modal-content">
+      <h4>Vous avez été déconnecté</h4>
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+    </div>
+  </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</main>       
+    </body>
+  </html>
