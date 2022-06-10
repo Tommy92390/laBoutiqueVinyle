@@ -4,4 +4,5 @@
 
 **Function** Discs and Vinyles Shop for Music Lovers 
 
-### Code : PHP and JS Tools : Bootstrap
+### Code : PHP **Object-Oriented Programming**  and JS with jQuerry
+Tools : Bootstrap & Font Awesome
